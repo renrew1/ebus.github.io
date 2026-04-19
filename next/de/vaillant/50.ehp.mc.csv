@@ -104,7 +104,7 @@ w,,install,Ioteststop,I/O Test stoppen,,,b506,01,
 r,,,Currenterror,Aktuelle Fehler,,,b503,0001,error,,UIN,,,Fehlernummer,error_1,,UIN,,,Fehlernummer,error_2,,UIN,,,Fehlernummer,error_3,,UIN,,,Fehlernummer,error_4,,UIN,,,Fehlernummer
 r,,,Errorhistory,Fehlerhistorie,,,b503,0101,index,m,UCH,,,,status,,UCH,,,Status,time,,VTM,,,Uhrzeit,date,,HDA:3,,,Datum,error,,UIN,,,Fehlernummer
 w,,install,Clearerrorhistory,Fehlerhistorie löschen,,,b503,0201,cleared,s,UCH,0=no;1=yes,,
-w,,,RoomTempOffset,Raumaufschaltung,,,b505,2d,value,,D2C,,°C,Temperatur
+w,,,RoomTempOffset,Raumaufschaltung,,,b505,2d,value,,D2C,,K,
 w,,,Party,Quick - Party,,,b505,05,value,,UCH,0=off;1=on,,
 w,,,Load,Quick - WW Speicherladung,,,b505,06,value,,UCH,0=off;1=on,,
 w,,,Save,Quick - Sparen bis,,,b505,07,value,,TTH,,,

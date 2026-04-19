@@ -5,8 +5,8 @@ r,,,OperatingMode,Betriebsart: 1=Ein 2=Aus 3=Auto,,,b509,0d0600,value,,UCH,0=dis
 r,,,TempDesired,Solltemperatur: 1/2 °C resolution,,,b509,0d0d00,value,,D1C,,°C,Temperatur
 r,,,CircuitDiaState,CircuitDiaState,,,b509,0d1800,value,,UCH,,,
 r,,,CircuitsStates,Zustand Wärmeabnehmer,,,b509,0d1e00,value,,UCH,,,
-r,,,CleaningLady,"Sparfunktion: 0,5h",,,b509,0d2300,value,,UCH,,,
-r,,,HwcLegioProtectionMaxTimer,Legionellenschutz max. Timer,,,b509,0d2d00,value,,UCH,,,
+r,,,CleaningLady,CleaningLady: saving function is activated for that duration,,,b509,0d2300,value,,D1C,,h,Stunden
+r,,,HwcLegioProtectionMaxTimer,Legionellenschutz max. Timer: Maximal time the legio protection state is hold (indepent of reached temperature),,,b509,0d2d00,value,,UCH,,min,Minuten
 r,,,ActualTempDesired,Akt. Solltemperatur: 1/2°C Auflösung,,,b509,0d3300,value,,D1C,,°C,Temperatur
 r,,,HwcLegioTempOkTimer,Max. Rücklauftemperatur,,,b509,0d3400,value,,UCH,,°C,Temperatur
 r,,,DateTime,Datum Uhrzeit,,,b504,00,dcfstate,,UCH,0=nosignal;1=ok;2=sync;3=valid,,DCF Empfängerstatus,btime,,BTI,,,Uhrzeit,bdate,,BDA,,,Datum,temp,,D2B,,°C,Temperatur

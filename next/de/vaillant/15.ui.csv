@@ -28,11 +28,11 @@ r,,,BoilerSwitchSteps,Eingestellte Anzahl von Kesselstufen,,,b509,0d3500,value,,
 w,,install,BoilerSwitchSteps,Eingestellte Anzahl von Kesselstufen,,,b509,0e3500,value,,UCH,,,
 r,,,SourceType,SourceType,,,b509,0d4e00,value,,UCH,0=noSystem;1=SSR;2=VRC;3=eSys;4=mixedSys,,"noSystem=0, SSR=1, VRC=2, eSys=3, mixedSys=4"
 r,,,RoomTemp,Raumisttemp: Raumtemperatur,,,b509,0d0000,temp,,D2C,,°C,Temperatur,sensor,,UCH,0=ok;85=circuit;170=cutoff,,Fühlerstatus
-r,,,RoomTempOffset,Raumisttemp. Korrekturwert,,,b509,0d1f00,value,,D2C,,°C,Temperatur
-w,,install,RoomTempOffset,Raumisttemp. Korrekturwert,,,b509,0e1f00,value,,D2C,,°C,Temperatur
-r,,,RoomTempOffsetSelfWarming,Offset Eigenerwärmung,,,b509,0d2000,value,,D2C,,°C,Temperatur
-r,,,OutsideTempOffset,Außentemperatur-Abgleich,,,b509,0d2100,value,,D2C,,°C,Temperatur
-w,,install,OutsideTempOffset,Außentemperatur-Abgleich,,,b509,0e2100,value,,D2C,,°C,Temperatur
+r,,,RoomTempOffset,Raumisttemp. Korrekturwert,,,b509,0d1f00,value,,D2C,,K,
+w,,install,RoomTempOffset,Raumisttemp. Korrekturwert,,,b509,0e1f00,value,,D2C,,K,
+r,,,RoomTempOffsetSelfWarming,Offset Eigenerwärmung,,,b509,0d2000,value,,D2C,,K,
+r,,,OutsideTempOffset,Außentemperatur-Abgleich,,,b509,0d2100,value,,D2C,,K,
+w,,install,OutsideTempOffset,Außentemperatur-Abgleich,,,b509,0e2100,value,,D2C,,K,
 r,,,RoomTempHoliday,Raumsollwert im Ferienbetrieb,,,b509,0d2200,value,,D2C,,°C,Temperatur
 w,,,RoomTempHoliday,Raumsollwert im Ferienbetrieb,,,b509,0e2200,value,,D2C,,°C,Temperatur
 r,,,HolidayPeriod,Ferienzeitraum,,,b509,0d4300,hfrom,,HDA:3,,,Ferienzeitraum von,hto,,HDA:3,,,Ferienzeitraum bis,hfrom_1,,HDA:3,,,Ferienzeitraum von,hto_1,,HDA:3,,,Ferienzeitraum bis
@@ -47,8 +47,8 @@ r,,,KeyCodeforConfigMenu,Passwort für das Konfigurationsmenü,,,b509,0d2c00,val
 w,,install,KeyCodeforConfigMenu,Passwort für das Konfigurationsmenü,,,b509,0e2c00,value,,HEX:4,,,
 r,,,TempFailDetectTime,Temperaturfehlererkennung nach: Zeit für die Temperaturfehlererkennung,,,b509,0d3300,value,,UCH,,,
 w,,install,TempFailDetectTime,Temperaturfehlererkennung nach: Zeit für die Temperaturfehlererkennung,,,b509,0e3300,value,,UCH,,,
-r,,,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0d3600,value,,UCH,,,display contrast
-w,,install,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0e3600,value,,UCH,,,display contrast
+r,,,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0d3600,value,,UCH,,%,display contrast
+w,,install,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0e3600,value,,UCH,,%,display contrast
 r,,,Time,Uhrzeit,,,b509,0d5f00,value,,VTI,,,Uhrzeit
 r,,,Day,Wochentag,,,b509,0d6000,value,,BDY,,,Wochentag
 r,,,Date,Datum,,,b509,0d6100,value,,HDA:3,,,Datum

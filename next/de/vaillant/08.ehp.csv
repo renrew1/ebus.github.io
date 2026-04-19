@@ -269,8 +269,8 @@ r,,,Code1Code2Valid,Codes übernehmen?: Code 1/Code 2: ohne Funktion! Werte dür
 w,,install,Code1Code2Valid,Codes übernehmen?: Code 1/Code 2: ohne Funktion! Werte dürfen nicht verändert werden!,,,b509,0e2400,value,,UCH,0=no;1=yes,,
 r,,,HydraulicScheme,Hydraulikplan,,,b509,0d6000,value,,UCH,,,Hydraulic Schematic
 w,,control,HydraulicScheme,Hydraulikplan,,,b509,0e6000,value,,UCH,,,Hydraulic Schematic
-r,,,HwcLaggingTime,WP Nachlaufzeit WW: Backup heater use for CH,,,b509,0d6100,value,,UCH,,,
-r,,,HwcLoadingDelay,WW Ladeverzögerung: Backup heater use for DHW,,,b509,0d6200,value,,UCH,,,
+r,,,HwcLaggingTime,WP Nachlaufzeit WW: Backup heater use for CH,,,b509,0d6100,value,,UCH,,min,Minuten
+r,,,HwcLoadingDelay,WW Ladeverzögerung: Backup heater use for DHW,,,b509,0d6200,value,,UCH,,min,Minuten
 r,,,SourceHours,Brine_Fan_Hours: operating hours of Fan_Brine,,,b509,0d9d00,value,,ULG,,h,Stunden
 r,,,Source2PumpHours,Brine2_P_Hours: operating hours of Sk2P,,,b509,0d9e00,value,,ULG,,h,Stunden
 r,,,SoftwareCode,SoftwareCode: 4 Bytes holding several software status info,,,b509,0d1801,value,,UCH,,,

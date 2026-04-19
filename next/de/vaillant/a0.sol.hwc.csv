@@ -28,7 +28,7 @@ r,,,HwcTempOffset,T_DHWOffset: Offset between desired temperature and setpoint,,
 w,,install,HwcTempOffset,T_DHWOffset: Offset between desired temperature and setpoint,,,b509,0e5000,value,,UCH,,K,
 r,,,HwcLaggingTime,WP Nachlaufzeit WW: Lagging time after tank loading,,,b509,0d2200,value,,UCH,,min,Minuten
 w,,install,HwcLaggingTime,WP Nachlaufzeit WW: Lagging time after tank loading,,,b509,0e2200,value,,UCH,,min,Minuten
-r,,,HwcLoadingHysteresis,"Hystereses Speicherladung: Hysteresis for DHW tank loading, if there is no special hysteresis (legionella, frost protection...).",,,b509,0d5c00,value,,UCH,,°C,Solltemperatur
+r,,,HwcLoadingHysteresis,"Hystereses Speicherladung: Hysteresis for DHW tank loading, if there is no special hysteresis (legionella, frost protection...).",,,b509,0d5c00,value,,UCH,,K,
 r,,,HwcLoadingRequest,Ladeanforderung: Flag: Loading request to the energy manager for DHW,,,b509,0d1c00,value,,UCH,0=no;1=yes,,
 r,,,HwcLoadingEnabled,Ladefreigabe: Flag: Loading enabled by the energy manager,,,b509,0d1d00,value,,UCH,0=no;1=yes,,
 r,,,HwcLegioTempOkTimer,Max. Rücklauftemperatur: Time for which the temperature for legio protection should be hold,,,b509,0d2000,value,,UCH,,°C,Temperatur

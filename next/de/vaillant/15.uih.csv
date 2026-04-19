@@ -27,9 +27,9 @@ r,,,OutsideTemp,Aussentemperatur: Außentemperatur,,,b509,0d0100,temp,,D2C,,°C,
 r,,,EhpHydraulicMap,Hydraulikschema (EHP),,,b509,0d2900,value,,UCH,,,
 w,,service,EhpHydraulicMap,Hydraulikschema (EHP),,,b509,0e2900,value,,UCH,,,
 r,,,EhpBasicStatus,AMU Status,,,b509,0d5000,value,,UCH,,,
-r,,,StateEM,"Status Energiemanger: Status des Energie-Manager:0: Aus,1: WW Anforderungt,2: WW Betrieb3 WW Nachlauf4: Heizbetrieb5: Überdruck im WW Betrieb6: Überdruck im Heizbetrieb7: Wartezustand Überdruck8: Wartezustand Heizung9: Wartezustand WW",,,b509,0d4b00,value,,UCH,,,
-r,,,LanguageVariant,Sprachvariante: Sprache,,,b509,0d2600,value,,UCH,,,
-w,,,LanguageVariant,Sprachvariante: Sprache,,,b509,0e2600,value,,UCH,,,
+r,,,StateEM,StateEM: state of energie manager,,,b509,0d4b00,value,,UCH,0=off;1=waterrequest;2=water;3=tankpumpoverrun;4=heat;5=overpresswater;6=overpressheat;7=waitheatdemandoverpress;8=waitheatdemandheating;9=waitheatdemandendofwater,,
+r,,,LanguageVariant,Sprachvariante: Sprache,,,b509,0d2600,value,,UCH,0=de;1=it;2=es;3=pt;4=fr;5=nl;6=dk;7=fin;8=se;9=no;10=en;11=ee;12=lt;13=lv;14=tr,,display language variant
+w,,,LanguageVariant,Sprachvariante: Sprache,,,b509,0e2600,value,,UCH,0=de;1=it;2=es;3=pt;4=fr;5=nl;6=dk;7=fin;8=se;9=no;10=en;11=ee;12=lt;13=lv;14=tr,,display language variant
 r,,,HolidayPeriods,Ferienzeitraum,,,b509,0d4300,hfrom,,HDA:3,,,Ferienzeitraum,hto,,HDA:3,,,Ferienzeitraum bis,hfrom_1,,HDA:3,,,Ferienzeitraum von,hto_1,,HDA:3,,,Ferienzeitraum bis
 w,,,HolidayPeriods,Ferienzeitraum,,,b509,0e4300,hfrom,,HDA:3,,,Ferienzeitraum,hto,,HDA:3,,,Ferienzeitraum bis,hfrom_1,,HDA:3,,,Ferienzeitraum von,hto_1,,HDA:3,,,Ferienzeitraum bis
 r,,,RoomTempHoliday,Raumsollwert im Ferienbetrieb: Raumsolltemperatur für den Ferienbetrieb,,,b509,0d2200,value,,D2C,,°C,Temperatur
@@ -52,8 +52,8 @@ r,,,EhpBackupRelease,Freigabe Zusatzheizer: Freigabe Reserveheizung,,,b509,0d710
 r,,,EhpTimeOfPredictedPowerCut,Erwarteter EVU Abschaltzeitpunkt: Zeit bis zur nächsten Abschaltung durch das EVU,,,b509,0d7300,value,,VTI,,,Uhrzeit
 r,,,TempFailDetectTime,Temperaturfehlererkennung nach: Zeit für die Temperaturfehlererkennung,,,b509,0d3300,value,,UCH,,,
 w,,install,TempFailDetectTime,Temperaturfehlererkennung nach: Zeit für die Temperaturfehlererkennung,,,b509,0e3300,value,,UCH,,,
-r,,,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0d3600,value,,UCH,,,display contrast
-w,,install,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0e3600,value,,UCH,,,display contrast
+r,,,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0d3600,value,,UCH,,%,display contrast
+w,,install,LcdContrastPwmValue,LCD Kontrast: Displaykontrast,,,b509,0e3600,value,,UCH,,%,display contrast
 r,,,EhpHeatBufferAvailable,EhpHeatBufferAvailable: Pufferspeicher vorhanden,,,b509,0d5c00,value,,UCH,0=off;1=on,,
 w,,install,EhpHeatBufferAvailable,EhpHeatBufferAvailable: Pufferspeicher vorhanden,,,b509,0e5c00,value,,UCH,0=off;1=on,,
 r,,,HcName2,Name HK2: Name für HK2,,,b509,0d4108,value,,STR:11,,,Name des Heizkreises

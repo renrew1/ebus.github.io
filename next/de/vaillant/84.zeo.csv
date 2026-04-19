@@ -43,7 +43,7 @@ r,,,TdesSwitch,tdes_um,,,b509,0dba00,value,,D2C,,°C,Temperatur
 r,,,QZeo,Zeolith Ertrag: in kWh,,,b509,0ddd00,value,,UIN,,,
 r,,,PumpB1Valve,Volumenstrom Verdampfer: Durchflussmenge durch Verdampfer,,,b509,0dde00,value,,UIN,,,
 r,,,ZSpAfter,Nachlaufzeit Sp-Pumpe: Nachlaufzeit Speicherpumpe/min,,,b509,0ddf00,value,,UCH,,,
-r,,,Partload,Teillast: 0..100% MSW_max in Testbetrieb,,,b509,0df800,value,,UCH,,,
+r,,,Partload,Teillast: 0..100% MSW_max in Testbetrieb,,,b509,0df800,value,,UCH,,%,
 r,,,PrimaryCircuitMicroSwitchPattern,PrimaryCircuitMicroSwitchPattern: 1=Des.o.B. 2=Adsorption 4=Des.m.B. 8=Direktheizbetrieb,,,b509,0df900,value,,UCH,,,
 r,,,Code1Code2Valid,Codes übernehmen?,,,b509,0d0100,value,,UCH,0=off;1=on,,
 r,,,DcfStatus,DCF Status,,,b509,0d3a00,value,,UCH,,,
@@ -57,18 +57,18 @@ r,,,Global_ErrorHistory,Fehlerhistorie,,,b509,0d4702,value,,UCH,,,
 r,,,Reset,Reset,,,b509,0d4800,value,,UCH,0=off;1=on,,
 r,,,RebootCounter,RebootCounter: incremented each time Firmware boots,,,b509,0d5100,value,,UIN,,,
 r,,,ContactThermostat,Anlegethermostat,,,b509,0da100,value,,UCH,0=off;1=on,,
-r,,,IsInHoliday,Ferienprogramm aktiv,,,b509,0d0200,value,,UCH,,,
+r,,,IsInHoliday,Ferienprogramm aktiv,,,b509,0d0200,value,,UCH,0=off;1=on,,
 r,,,OutsideTempCorrection,"Außentemp. Sensor Korrektur: 0,5 °C Auflösung",,,b509,0d0800,value,,SCH,,°C,Temperatur
 r,,,HolidayTempDesired,Feriensollwert: 1/2 °C resolution,,,b509,0d0f00,value,,D1C,,°C,Temperatur
 r,,,HeatingCurve,Heizkurve: 1/100 resolution,,,b509,0d1000,value,,UIN,100,,Heizkurve: Heating curve
 r,,,OtShutdownLimit,Außentemp. Abschaltgrenze: Bedarfsabhängige Heizungsabschaltung,,,b509,0d1100,value,,UCH,,°C,Temperatur
-r,,,BoilerMaxPreShutdown,Kesselvorabschaltung: 15..120min,,,b509,0d1400,value,,UCH,,,
-r,,,HcFlowIncrease,Temperaturüberhöhung,,,b509,0d1500,value,,UCH,,,
+r,,,BoilerMaxPreShutdown,Kesselvorabschaltung: 15..120min,,,b509,0d1400,value,,UCH,,min,Minuten
+r,,,HcFlowIncrease,Temperaturüberhöhung,,,b509,0d1500,value,,UCH,,K,
 r,,,CircuitPeriods,CircuitPeriods,,,b509,0d1900,value,,UCH,,,
-r,,,LegioProtectionEnabled,Legionellenschutz: global für alle WW Kreise,,,b509,0d1a00,value,,UCH,0=off;1=on,,
+r,,,LegioProtectionEnabled,Legionellenschutz: global für alle WW Kreise,,,b509,0d1a00,value,,UCH,0=no;1=yes,,
 r,,,IsInStorageFilling,Speicherladung aktiv,,,b509,0d2000,value,,UCH,0=off;1=on,,
-r,,,FrostProtectDelay,Frostschutz-Verzögerung: 1h,,,b509,0d2200,value,,UCH,,,
-r,,,IsInParty,Partyfunktion aktiv,,,b509,0d2600,value,,UCH,,,
+r,,,FrostProtectDelay,Frostschutz-Verzögerung: 1h,,,b509,0d2200,value,,UCH,,h,Stunden
+r,,,IsInParty,Partyfunktion aktiv,,,b509,0d2600,value,,UCH,0=no;1=yes,,
 r,,,HcPreShutdownActive,Vorarabschaltung aktiv: bit für jeden Heizkreis,,,b509,0d2800,value,,UCH,,,
 r,,,HcPreHeatingActive,Voraufheizung aktiv: bit für jeden Heizkreis,,,b509,0d2900,value,,UCH,,,
 r,,,InitCircuit,InitCircuit: bit für jeden Heizkreis,,,b509,0d2b00,value,,UCH,,,
@@ -76,8 +76,8 @@ r,,,StartOneOffFilling,Start Einmalladung: bit für jeden Heizkreis,,,b509,0d2e0
 r,,,StorageFlowTemp,DCF Status: 1°C resolution,,,b509,0d2f00,value,,UCH,,°C,Temperatur
 r,,,HwcLoadingRequest,Ladeanforderung: bit für jeden Heizkreis,,,b509,0d3000,value,,UCH,,,
 r,,,HwcLoadingEnabled,Ladefreigabe: bit für jeden Heizkreis,,,b509,0d3100,value,,UCH,0=off;1=on,,
-r,,,HwcLaggingTime,WP Nachlaufzeit WW: 3..9min 1min Auflösung,,,b509,0d3600,value,,UCH,,,
-r,,,HwcLoadingDelay,WW Ladeverzögerung: 0..30min / 1min,,,b509,0d3700,value,,UCH,,,
+r,,,HwcLaggingTime,WP Nachlaufzeit WW: 3..9min 1min Auflösung,,,b509,0d3600,value,,UCH,,min,Minuten
+r,,,HwcLoadingDelay,WW Ladeverzögerung: 0..30min / 1min,,,b509,0d3700,value,,UCH,,min,Minuten
 r,,,RestartBlockingTime,RestartBlockingTime,,,b509,0d3800,value,,UIN,,,
 r,,,ReturnTempMax,Max. Rücklauf Temp HK,,,b509,0d3f00,value,,D2C,,°C,Temperatur
 r,,,OutputTesting,Test der Ausgänge,,,b509,0d4200,value,,UCH,0=off;1=on,,
@@ -102,10 +102,10 @@ w,,service,TwoPointRegulatorHysteresisHc,TwoPointRegulatorHysteresis_CH,,,b509,0
 r,,,TwoPointRegulatorHysteresisHwc,TwoPointRegulatorHysteresis_DHW,,,b509,0db600,value,,D2C,,°C,Temperatur
 w,,service,TwoPointRegulatorHysteresisHwc,TwoPointRegulatorHysteresis_DHW,,,b509,0eb600,value,,D2C,,°C,Temperatur
 r,,,ModuleDisplayedFilling,ModuleDisplayedFilling: Schwärzungsgrad in %,,,b509,0dcc00,value,,UCH,,,
-r,,,P1Voltage38,P1_Voltage_38: gemessene P1 Spannung bei 38% in 1/100V,,,b509,0de400,value,,UIN,,,
-w,,service,P1Voltage38,P1_Voltage_38: gemessene P1 Spannung bei 38% in 1/100V,,,b509,0ee400,value,,UIN,,,
-r,,,P2Voltage38,P2_Voltage_38: gemessene P2 Spannung bei 38% in 1/100V,,,b509,0de600,value,,UIN,,,
-w,,service,P2Voltage38,P2_Voltage_38: gemessene P2 Spannung bei 38% in 1/100V,,,b509,0ee600,value,,UIN,,,
+r,,,P1Voltage38,P1_Voltage_38: gemessene P1 Spannung bei 38%,,,b509,0de400,value,,UIN,100,V,
+w,,service,P1Voltage38,P1_Voltage_38: gemessene P1 Spannung bei 38%,,,b509,0ee400,value,,UIN,100,V,
+r,,,P2Voltage38,P2_Voltage_38: gemessene P2 Spannung bei 38%,,,b509,0de600,value,,UIN,100,V,
+w,,service,P2Voltage38,P2_Voltage_38: gemessene P2 Spannung bei 38%,,,b509,0ee600,value,,UIN,100,V,
 r,,,FillSourceCircuit,Befüllprogramm Solarkreis,,,b509,0df600,value,,UCH,0=off;1=on,,
 r,,,DeaerateSourceCircuit,DeaerateBrineCircuit,,,b509,0df700,value,,UCH,0=off;1=on,,
 r,,,Ymin,PI-Regelung: Ymin,,,b509,0dfb00,value,,UCH,,,

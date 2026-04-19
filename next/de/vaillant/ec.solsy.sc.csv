@@ -26,18 +26,18 @@ r,,,TeleSwitch,State of the Teleswitch,,,b509,0d0a00,value,,UCH,0=off;1=on,,
 r,,,HasSolCollVolumeSensor,Volumenstrommeßteil erkannt: -,,,b509,0d9a00,value,,UCH,0=no;1=yes,,
 r,,,SolCollVolumeSensorPowerLastMinut,Gemessener Volumenstrom der letzten Minute,,,b509,0d9b00,value,,UIN,,l/h,
 r,,,OutputMA,Multifunktionsausgang MA: Status Multifunktionsausgang,,,b509,0d1c00,value,,UCH,0=off;1=on,,
-r,,,SolEnableDiffTemp1,Einschaltdifferenz 1: Temperaturdifferenz zwischen KOL1 und Speicher unten ab der die Kollektorpumpe gestartet wird,,,b509,0d6300,value,,UCH,,°C,Temperatur
-w,,,SolEnableDiffTemp1,Einschaltdifferenz 1: Temperaturdifferenz zwischen KOL1 und Speicher unten ab der die Kollektorpumpe gestartet wird,,,b509,0e6300,value,,UCH,,°C,Temperatur
+r,,,SolEnableDiffTemp1,Einschaltdifferenz 1: Temperaturdifferenz zwischen KOL1 und Speicher unten ab der die Kollektorpumpe gestartet wird,,,b509,0d6300,value,,UCH,,K,
+w,,,SolEnableDiffTemp1,Einschaltdifferenz 1: Temperaturdifferenz zwischen KOL1 und Speicher unten ab der die Kollektorpumpe gestartet wird,,,b509,0e6300,value,,UCH,,K,
 r,,,DeltaTOnFlexDtController,Einschaltdifferenz TD1/TD2: Temperaturdifferenz zwischen TD1 und TD2 ab der der Ausgang MA angesteuert wird,,,b509,0da600,value,,UCH,,K,
 w,,,DeltaTOnFlexDtController,Einschaltdifferenz TD1/TD2: Temperaturdifferenz zwischen TD1 und TD2 ab der der Ausgang MA angesteuert wird,,,b509,0ea600,value,,UCH,,K,
 r,,,DeltaTOffFlexDtController,Ausschaltdifferenz TD1/TD2: Temperaturdifferenz zwischen TD1 und TD2 ab der der Ausgang MA wieder abgeschaltet wird,,,b509,0da700,value,,UCH,,K,
 w,,,DeltaTOffFlexDtController,Ausschaltdifferenz TD1/TD2: Temperaturdifferenz zwischen TD1 und TD2 ab der der Ausgang MA wieder abgeschaltet wird,,,b509,0ea700,value,,UCH,,K,
-r,,,SolEnableDiffTemp2,Einschaltdifferenz 2: Temperaturdifferenz zwischen KOL2 und Speicher ab der die Kollektorpumpe gestartet wird,,,b509,0d6308,value,,UCH,,°C,Temperatur
-w,,,SolEnableDiffTemp2,Einschaltdifferenz 2: Temperaturdifferenz zwischen KOL2 und Speicher ab der die Kollektorpumpe gestartet wird,,,b509,0e6308,value,,UCH,,°C,Temperatur
-r,,,SolDisableDiffTemp1,Ausschaltdifferenz 1: Temperaturdifferenz zwischen KOL1 und Speicher unten unterhalb der die Kollektorpumpe gestoppt wird,,,b509,0d6400,value,,UCH,,°C,Temperatur
-w,,,SolDisableDiffTemp1,Ausschaltdifferenz 1: Temperaturdifferenz zwischen KOL1 und Speicher unten unterhalb der die Kollektorpumpe gestoppt wird,,,b509,0e6400,value,,UCH,,°C,Temperatur
-r,,,SolDisableDiffTemp2,Ausschaltdifferenz 2: Temperaturdifferenz zwischen KOL2 und Speicher unten unterhalb der die Kollektorpumpe gestoppt wird,,,b509,0d6408,value,,UCH,,°C,Temperatur
-w,,,SolDisableDiffTemp2,Ausschaltdifferenz 2: Temperaturdifferenz zwischen KOL2 und Speicher unten unterhalb der die Kollektorpumpe gestoppt wird,,,b509,0e6408,value,,UCH,,°C,Temperatur
+r,,,SolEnableDiffTemp2,Einschaltdifferenz 2: Temperaturdifferenz zwischen KOL2 und Speicher ab der die Kollektorpumpe gestartet wird,,,b509,0d6308,value,,UCH,,K,
+w,,,SolEnableDiffTemp2,Einschaltdifferenz 2: Temperaturdifferenz zwischen KOL2 und Speicher ab der die Kollektorpumpe gestartet wird,,,b509,0e6308,value,,UCH,,K,
+r,,,SolDisableDiffTemp1,Ausschaltdifferenz 1: Temperaturdifferenz zwischen KOL1 und Speicher unten unterhalb der die Kollektorpumpe gestoppt wird,,,b509,0d6400,value,,UCH,,K,
+w,,,SolDisableDiffTemp1,Ausschaltdifferenz 1: Temperaturdifferenz zwischen KOL1 und Speicher unten unterhalb der die Kollektorpumpe gestoppt wird,,,b509,0e6400,value,,UCH,,K,
+r,,,SolDisableDiffTemp2,Ausschaltdifferenz 2: Temperaturdifferenz zwischen KOL2 und Speicher unten unterhalb der die Kollektorpumpe gestoppt wird,,,b509,0d6408,value,,UCH,,K,
+w,,,SolDisableDiffTemp2,Ausschaltdifferenz 2: Temperaturdifferenz zwischen KOL2 und Speicher unten unterhalb der die Kollektorpumpe gestoppt wird,,,b509,0e6408,value,,UCH,,K,
 r,,,SolHwcMaxLoadTemp1,"Maximaltemperatur 1: Maximaltemperatur für den 1. Solarspeicher an SP3 bei deren erreichen KOL1-P abgeschaltet wird. Erst 1,5K unterhalb dieser Temperatur kann der Speicher wieder beladen werden.",,,b509,0d6500,value,,UCH,,°C,Temperatur
 w,,,SolHwcMaxLoadTemp1,"Maximaltemperatur 1: Maximaltemperatur für den 1. Solarspeicher an SP3 bei deren erreichen KOL1-P abgeschaltet wird. Erst 1,5K unterhalb dieser Temperatur kann der Speicher wieder beladen werden.",,,b509,0e6500,value,,UCH,,°C,Temperatur
 r,,,SolHwcMaxLoadTemp2,"Maximaltemperatur 2: Maximaltemperatur für den 2. Solarspeicher bzw Schwimmbad an SP1 bei deren erreichen KOL1-P abgeschaltet wird. Erst 1,5K unterhalb dieser Temperatur kann der Speicher wieder beladen werden.",,,b509,0d6508,value,,UCH,,°C,Temperatur
@@ -50,13 +50,13 @@ r,,,ColKickGradient,Gradient Kollektorkick,,,b509,0d9d00,value,,UCH,300,°min,
 w,,service,ColKickGradient,Gradient Kollektorkick,,,b509,0e9d00,value,,UCH,300,°min,
 r,,,ColKickPumpTime,Länge Kollektorkick,,,b509,0d9e00,value,,UCH,,s,Sekunden
 w,,service,ColKickPumpTime,Länge Kollektorkick,,,b509,0e9e00,value,,UCH,,s,Sekunden
-r,,,ScProtectionHysteresis,Hysterese Schutzfunktion: Hysterese für die Kollektorkreisschutzfunktion,,,b509,0d9f00,value,,UCH,,°C,Solltemperatur
-w,,,ScProtectionHysteresis,Hysterese Schutzfunktion: Hysterese für die Kollektorkreisschutzfunktion,,,b509,0e9f00,value,,UCH,,°C,Solltemperatur
+r,,,ScProtectionHysteresis,Hysterese Schutzfunktion: Hysterese für die Kollektorkreisschutzfunktion,,,b509,0d9f00,value,,UCH,,K,
+w,,,ScProtectionHysteresis,Hysterese Schutzfunktion: Hysterese für die Kollektorkreisschutzfunktion,,,b509,0e9f00,value,,UCH,,K,
 r,,,FrostProtectionLimit,Grenze für Solarkreis Frostschutz,,,b509,0da200,value,,SCH,,K,limits for the solar collector frost protection
 r,,,FrostProtectionEnabled,Solarkreis Frostschutzfunktion: Frostschutzfunktion für den Solarkreis. In einigen Ländern gesetzlich vorgeschrieben. Bitte nin Deutschland nicht aktivieren,,,b509,0da300,value,,UCH,0=off;1=on,,
 r,,,SolCollVolumeSensorTicksPer10Lite,Anzahl Impule für 10 Liter,,,b509,0db000,value,,UCH,,,How often the volume sensor has to pulse for the detection of 10 liters
-r,,,SolFlowRate,Volumenstrom Solarkreis,,,b509,0d7400,value,,UIN,60,l/min,Flow rate the collector pumps are able to deliver for 100% power
-w,,,SolFlowRate,Volumenstrom Solarkreis,,,b509,0e7400,value,,UIN,60,l/min,Flow rate the collector pumps are able to deliver for 100% power
+r,,,SolFlowRate,SolarFlowRate: Flow rate the collector pumps are able to deliver for 100% power,,,b509,0d7400,value,,UIN,,l/h,
+w,,,SolFlowRate,SolarFlowRate: Flow rate the collector pumps are able to deliver for 100% power,,,b509,0e7400,value,,UIN,,l/h,
 r,,,SolEnablePumpPWM,ED-Steuerung: Collector pumps should be driven by a slow pulse width modulation,,,b509,0dae00,value,,UCH,0=off;1=on,,
 w,,,SolEnablePumpPWM,ED-Steuerung: Collector pumps should be driven by a slow pulse width modulation,,,b509,0eae00,value,,UCH,0=off;1=on,,
 r,,,ExtendedYieldCalculation,Erweiterter Solarertrag: calculate solar yield like specified by austrian regulation. Uses SP3 or this purpose!,,,b509,0d7f00,value,,UCH,0=off;1=on,,

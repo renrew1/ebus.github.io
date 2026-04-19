@@ -34,7 +34,7 @@ r,,,AutoTappingTempDesired,Automatischer Zapfsollwert,,,b509,0d0c00,value,,D2C,,
 r,,,QuickVetoTempDesired,Quick Veto Sollwert,,,b509,0d0d00,value,,D2C,,°C,Temperatur
 r,,,ActualTappingTempDesired,Aktueller Zapfsollwert,,,b509,0d0e00,value,,D2C,,°C,Temperatur
 r,,,QuickVetoStart,Quick Veto start,,,b509,0d0f00,value,,UCH,0=off;1=on,,
-r,,,LegioStartDay,Starttag Legionellenschutz,,,b509,0d1000,value,,UCH,,,0=Montag1 = Dienstag..6 = Sonntag7 = Legionellenschutz aus8 = täglich
+r,,,LegioStartDay,Starttag Legionellenschutz,,,b509,0d1000,value,,UCH,0=Mon;1=Tue;2=Wed;3=Thu;4=Fri;5=Sat;6=Sun;7=off;8=Mon_Sun,,Start day for legio protection
 r,,,LegioStartTime,Startzeit Legionellenschutz: Time when LegioProtect starts on specific day,,,b509,0d1100,value,,VTI,,,Uhrzeit
 r,,,PartyStart,Start Partyfunktion: Start Party Mode,,,b509,0d1200,value,,UCH,0=off;1=on,,
 r,,,HolidayStart,Start Ferienfunktion: Start Holiday Mode,,,b509,0d1300,value,,UCH,0=off;1=on,,
