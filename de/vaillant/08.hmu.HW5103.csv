@@ -20,7 +20,7 @@ r,,,CopHwc,,,,b51a,05ff3217,ign,,IGN:3,,,,value,,UIN,10,,
 r,,,CompressorBlocktime,,,,b51a,05ff321e,ign,,IGN:3,,,,value,,UIN,,min,
 r,,,SupplyTempWeighted,,,,b51a,05ff321f,ign,,IGN:3,,,,value,,D2C,,°C,Temperatur
 r,,,FlowTemp,current flow temperature,,,b51a,05ff3220,ign,,IGN:3,,,,value,,D2C,,°C,Temperatur
-r,,,EnergyIntegral,current energy integral,,,b51a,05ff3221,ign,,IGN:3,,,,value,,SIN,,°min,
+r,,,EnergyIntegral,current energy integral,,,b51a,05ff3221,value,,IGN:3,,,,value,,SIN,,°min,
 r,,,CurrentYieldPower,current yielded energy from the environment,,,b51a,05ff3223,ign,,IGN:3,,,,value,,SCH,10,kW,
 r,,,CurrentConsumedPower,current power consumption,,,b51a,05ff3224,ign,,IGN:3,,,,value,,SCH,10,kW,
 r,,,CurrentCompressorUtil,current compressor utilization,,,b51a,05ff3225,ign,,IGN:3,,,,value,,D2C,,%,
@@ -72,7 +72,7 @@ r,,,Hours,Betriebsstunden,,,b51a,05ff3240,ign,,IGN:3,,,
 r,,,HoursHc,operation hours heating,,,b51a,05ff3241,ign,,IGN:3,,,
 r,,,HoursCool,operation hours cooling,,,b51a,05ff3243,ign,,IGN:3,,,
 r,,,HoursHwc,operation hours hot water,,,b51a,05ff3244,ign,,IGN:3,,,
-r,,,AirIntakeTemp,air intake temperature,,,b51a,05ff3226,ign,,IGN:3,,,
+r,,,AirIntakeTemp,air intake temperature,,,b51a,05ff3226,value,,IGN:3,,,,value,,D2C,,°C,Temperatur
 r,,,TargetTempHc,heat circuit target temperature,,,b51a,05ff321c,ign,,IGN:3,,,
 r,,,SourceTempOutput,,,,b51a,05ff3227,ign,,IGN:3,,,
 r,,,SourcePressure,,,,b51a,05ff323e,ign,,IGN:3,,,
